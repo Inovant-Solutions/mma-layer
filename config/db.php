@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=192.168.113.114;dbname=mma_layer',
+    'dsn' => 'mysql:host=192.168.113.114;dbname=mma_lawyer',
     'username' => 'root',
     'password' => 'FLt5JqNemLX-8qcAzGrHX+Pq',
     'charset' => 'utf8mb4',

@@ -1,4 +1,14 @@
-CREATE TABLE `mma_layer`.`banners` ( `banner_id` INT NOT NULL AUTO_INCREMENT, `title_en` VARCHAR(255) NOT NULL, `title_ar` VARCHAR(255) NOT NULL, `image_en` VARCHAR(255) NOT NULL, `image_ar` VARCHAR(255) NOT NULL, `desc_en` TEXT NULL DEFAULT NULL, `desc_ar` TEXT NULL DEFAULT NULL, `is_active` TINYINT NULL DEFAULT 1, `is_deleted` TINYINT NULL DEFAULT 0, `created_at` TIMESTAMP NULL DEFAULT current_timestamp(), `updated_at` TIMESTAMP NULL DEFAULT current_timestamp(), PRIMARY KEY (`banner_id`));
+CREATE TABLE `banners`(
+    `banner_id` INT NOT NULL AUTO_INCREMENT,
+    `title_en` VARCHAR(255) NOT NULL,
+    `title_ar` VARCHAR(255) NOT NULL,
+    `image_en` VARCHAR(255) NOT NULL,
+    `image_ar` VARCHAR(255) NOT NULL,
+    `desc_en` TEXT NULL DEFAULT NULL,
+    `desc_ar` TEXT NULL DEFAULT NULL,
+    `is_active` TINYINT NULL DEFAULT 1,
+    `is_deleted` TINYINT NULL DEFAULT 0,
+    `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP(), `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP(), PRIMARY KEY(`banner_id`));
 
-CREATE TABLE `mma_layer`.`services` ( `service_id` INT NOT NULL AUTO_INCREMENT, `title_en` VARCHAR(255) NOT NULL, `title_ar` VARCHAR(255) NOT NULL, `desc_en` TEXT NULL DEFAULT NULL, `desc_ar` TEXT NULL DEFAULT NULL, `image_en` VARCHAR(255) NOT NULL, `image_ar` VARCHAR(255) NOT NULL, `is_active` TINYINT NULL DEFAULT 1, `is_deleted` TINYINT NULL DEFAULT 0, `created_at` TIMESTAMP NULL DEFAULT current_timestamp(), `updated_at` TIMESTAMP NULL DEFAULT current_timestamp()
+CREATE TABLE `services` ( `service_id` INT NOT NULL AUTO_INCREMENT, `title_en` VARCHAR(255) NOT NULL, `title_ar` VARCHAR(255) NOT NULL, `desc_en` TEXT NULL DEFAULT NULL, `desc_ar` TEXT NULL DEFAULT NULL, `image_en` VARCHAR(255) NOT NULL, `image_ar` VARCHAR(255) NOT NULL, `is_active` TINYINT NULL DEFAULT 1, `is_deleted` TINYINT NULL DEFAULT 0, `created_at` TIMESTAMP NULL DEFAULT current_timestamp(), `updated_at` TIMESTAMP NULL DEFAULT current_timestamp()
 ON update current_timestamp(), PRIMARY KEY (`service_id`));
