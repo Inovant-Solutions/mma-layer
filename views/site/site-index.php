@@ -162,7 +162,7 @@
                         <div class="row g-0 align-items-center ">
                             <div class="col-md-4 <?= ($serviceIndex % 2 == 0) ? "text-md-start" : "order-md-1  text-md-end"  ?> ">
                                 <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
-                                    <img class="img-fluid rounded-circle" src="/uploads/<?= $service->image_en ?>" alt="">
+                                    <img class="img-fluid rounded-circle" height="250" width="250" src="/uploads/<?= $service->image_en ?>" alt="">
                                 </div>
                             </div>
                             <div class="col-md-8 ps-1 pe-5">
