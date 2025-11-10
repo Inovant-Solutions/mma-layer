@@ -2,9 +2,9 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=mma_layer',
+    'dsn' => 'mysql:host=192.168.113.114;dbname=mma_layer',
     'username' => 'root',
-    'password' => '0987654321',
+    'password' => 'FLt5JqNemLX-8qcAzGrHX+Pq',
     'charset' => 'utf8mb4',
 
     // Schema cache options (for production environment)
@@ -12,3 +12,10 @@ return [
     //'schemaCacheDuration' => 60,
     //'schemaCache' => 'cache',
 ];
+
+// DB_CONNECTION=mysql
+// DB_HOST=192.168.113.114
+// DB_PORT=3306
+// DB_DATABASE=sikkadev
+// DB_USERNAME=root
+// DB_PASSWORD=FLt5JqNemLX-8qcAzGrHX+Pq
