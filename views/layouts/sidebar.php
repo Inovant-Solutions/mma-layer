@@ -35,43 +35,87 @@
             <?php
             echo \hail812\adminlte\widgets\Menu::widget([
                 'items' => [
+                    ['label' => 'Dashboard', 'url' => ['site/dashboard'], 'icon' => 'tachometer-alt', 'visible' => Yii::$app->user->isGuest],
                     [
-                        'label' => 'Starter Pages',
-                        'icon' => 'tachometer-alt',
-                        'badge' => '<span class="right badge badge-info">2</span>',
+                        'label' => 'Admin',
+                        'icon' => 'user-shield',
+                        // 'badge' => '<span class="right badge badge-info">2</span>',
                         'items' => [
-                            ['label' => 'Active Page', 'url' => ['site/index'], 'iconStyle' => 'far'],
-                            ['label' => 'Inactive Page', 'iconStyle' => 'far'],
+                            ['label' => 'Add', 'url' => ['banner/create'], 'icon' => 'plus'],
+                            ['label' => 'List', 'url' => ['banner/index'], 'icon' => 'list'],
+                            
                         ]
                     ],
-                    ['label' => 'Simple Link', 'icon' => 'th', 'badge' => '<span class="right badge badge-danger">New</span>'],
-                    ['label' => 'Yii2 PROVIDED', 'header' => true],
-                    ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
-                    ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
-                    ['label' => 'Debug', 'icon' => 'bug', 'url' => ['/debug'], 'target' => '_blank'],
-                    ['label' => 'MULTI LEVEL EXAMPLE', 'header' => true],
-                    ['label' => 'Level1'],
                     [
-                        'label' => 'Level1',
+                        'label' => 'Banners',
+                        'icon' => 'photo-video',
+                        // 'badge' => '<span class="right badge badge-info">2</span>',
                         'items' => [
-                            ['label' => 'Level2', 'iconStyle' => 'far'],
-                            [
-                                'label' => 'Level2',
-                                'iconStyle' => 'far',
-                                'items' => [
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle']
-                                ]
-                            ],
-                            ['label' => 'Level2', 'iconStyle' => 'far']
+                            ['label' => 'Add', 'url' => ['banner/create'], 'icon' => 'plus'],
+                            ['label' => 'List', 'url' => ['banner/index'], 'icon' => 'list'],
+                            
                         ]
                     ],
-                    ['label' => 'Level1'],
-                    ['label' => 'LABELS', 'header' => true],
-                    ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
-                    ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
-                    ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
+                    [
+                        'label' => 'Services',
+                        'icon' => 'photo-video',
+                        // 'badge' => '<span class="right badge badge-info">2</span>',
+                        'items' => [
+                            ['label' => 'Add', 'url' => ['service/create'], 'icon' => 'plus'],
+                            ['label' => 'List', 'url' => ['service/index'], 'icon' => 'list'],
+                            
+                        ]
+                    ],
+                    [
+                        'label' => 'Teams',
+                        'icon' => 'photo-video',
+                        // 'badge' => '<span class="right badge badge-info">2</span>',
+                        'items' => [
+                            ['label' => 'Add', 'url' => ['team/create'], 'icon' => 'plus'],
+                            ['label' => 'List', 'url' => ['team/index'], 'icon' => 'list'],
+                            
+                        ]
+                    ],
+
+
+
+                    // [
+                    //     'label' => 'Starter Pages',
+                    //     'icon' => 'tachometer-alt',
+                    //     'badge' => '<span class="right badge badge-info">2</span>',
+                    //     'items' => [
+                    //         ['label' => 'Active Page', 'url' => ['site/index'], 'iconStyle' => 'far'],
+                    //         ['label' => 'Inactive Page', 'iconStyle' => 'far'],
+                    //     ]
+                    // ],
+                    // ['label' => 'Simple Link', 'icon' => 'th', 'badge' => '<span class="right badge badge-danger">New</span>'],
+                    // ['label' => 'Yii2 PROVIDED', 'header' => true],
+                    // ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
+                    // ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
+                    // ['label' => 'Debug', 'icon' => 'bug', 'url' => ['/debug'], 'target' => '_blank'],
+                    // ['label' => 'MULTI LEVEL EXAMPLE', 'header' => true],
+                    // ['label' => 'Level1'],
+                    // [
+                    //     'label' => 'Level1',
+                    //     'items' => [
+                    //         ['label' => 'Level2', 'iconStyle' => 'far'],
+                    //         [
+                    //             'label' => 'Level2',
+                    //             'iconStyle' => 'far',
+                    //             'items' => [
+                    //                 ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
+                    //                 ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
+                    //                 ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle']
+                    //             ]
+                    //         ],
+                    //         ['label' => 'Level2', 'iconStyle' => 'far']
+                    //     ]
+                    // ],
+                    // ['label' => 'Level1'],
+                    // ['label' => 'LABELS', 'header' => true],
+                    // ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
+                    // ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
+                    // ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
                 ],
             ]);
             ?>

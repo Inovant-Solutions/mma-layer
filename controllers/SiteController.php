@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Service;
+use app\models\Team;
 
 class SiteController extends Controller
 {
@@ -68,10 +69,17 @@ class SiteController extends Controller
 
         $bannerModel = Banner::find()->all();
         $serviceModel = Service::find()->all();
-        return $this->render('site-index', [
+        $teamModel = Team::find()->all();
+        return $this->render('site-index-new', [
             "bannerModel" => $bannerModel,
             "serviceModel" => $serviceModel,
+            "teamModel" => $teamModel,
         ]);
+    }
+    public function actionDashboard()
+    {
+
+        return $this->render('dashboard');
     }
 
 

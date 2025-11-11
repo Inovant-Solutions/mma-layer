@@ -2,9 +2,11 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=192.168.113.114;dbname=mma_lawyer',
+    // 'dsn' => 'mysql:host=192.168.113.114;dbname=mma_lawyer',
+    'dsn' => 'mysql:host=localhost;dbname=mma_layer',
     'username' => 'root',
-    'password' => 'FLt5JqNemLX-8qcAzGrHX+Pq',
+    // 'password' => 'FLt5JqNemLX-8qcAzGrHX+Pq',
+    'password' => '0987654321',
     'charset' => 'utf8mb4',
 
     // Schema cache options (for production environment)

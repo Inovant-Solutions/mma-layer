@@ -1,234 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-20 bg-slate-900">
+        <div class="absolute inset-0 islamic-pattern opacity-5"></div>
 
-<head>
-    <meta charset="utf-8">
-    <title>Poseify - Modeling Agency Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+        <div class="relative z-10 container mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-1 bg-amber-600/20 border border-amber-600/40 rounded-full mb-4">
+                    <p class="text-amber-400 text-sm">Get In Touch</p>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    Schedule a consultation with our legal experts today
+                </p>
+            </div>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div>
+                    <div class="bg-slate-800 border border-amber-600/20 rounded-lg p-8 mb-8">
+                        <h3 class="text-2xl font-semibold text-white mb-6">Send Us a Message</h3>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-slate-400 mb-2 text-sm font-medium">Full Name</label>
+                                    <input type="text" placeholder="Your name" class="w-full px-4 py-3 bg-slate-900 border border-amber-600/30 text-white placeholder-slate-500 rounded-lg focus:outline-none focus:border-amber-600">
+                                </div>
+                                <div>
+                                    <label class="block text-slate-400 mb-2 text-sm font-medium">Email Address</label>
+                                    <input type="email" placeholder="your.email@example.com" class="w-full px-4 py-3 bg-slate-900 border border-amber-600/30 text-white placeholder-slate-500 rounded-lg focus:outline-none focus:border-amber-600">
+                                </div>
+                            </div>
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+                            <div>
+                                <label class="block text-slate-400 mb-2 text-sm font-medium">Phone Number</label>
+                                <input type="tel" placeholder="+965 XXXX XXXX" class="w-full px-4 py-3 bg-slate-900 border border-amber-600/30 text-white placeholder-slate-500 rounded-lg focus:outline-none focus:border-amber-600">
+                            </div>
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+                            <div>
+                                <label class="block text-slate-400 mb-2 text-sm font-medium">Legal Matter</label>
+                                <input type="text" placeholder="Subject of inquiry" class="w-full px-4 py-3 bg-slate-900 border border-amber-600/30 text-white placeholder-slate-500 rounded-lg focus:outline-none focus:border-amber-600">
+                            </div>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+                            <div>
+                                <label class="block text-slate-400 mb-2 text-sm font-medium">Message</label>
+                                <textarea placeholder="Tell us about your legal needs..." rows="5" class="w-full px-4 py-3 bg-slate-900 border border-amber-600/30 text-white placeholder-slate-500 rounded-lg focus:outline-none focus:border-amber-600 resize-none"></textarea>
+                            </div>
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+                            <button type="submit" class="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-semibold rounded-lg transition-all">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+                <div>
+                    <div class="bg-slate-800 border border-amber-600/20 rounded-lg p-8 mb-8">
+                        <h3 class="text-2xl font-semibold text-white mb-6">Office Information</h3>
 
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-amber-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Address</h4>
+                                    <p class="text-slate-400">Al-Shuhada Street, Block 7<br>Kuwait City, Kuwait 13068</p>
+                                    <p class="text-amber-400/70 text-sm mt-1">شارع الشهداء، قطعة 7، مدينة الكويت</p>
+                                </div>
+                            </div>
 
-    <!-- Header Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h2 class="mb-0 text-primary text-uppercase"><i class="fa-regular fa-face-smile me-1"></i>Poseify</h2>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="team.html" class="dropdown-item">Our Models</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-amber-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Phone</h4>
+                                    <p class="text-slate-400">+965 2222 3333</p>
+                                    <p class="text-slate-400">+965 9999 8888 (Mobile)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-amber-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Email</h4>
+                                    <p class="text-slate-400">info@malenezi.com</p>
+                                    <p class="text-slate-400">contact@malenezi.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 bg-amber-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Office Hours</h4>
+                                    <p class="text-slate-400">Sunday - Thursday: 8:00 AM - 5:00 PM</p>
+                                    <p class="text-slate-400">Saturday: 9:00 AM - 2:00 PM</p>
+                                    <p class="text-amber-400/70 text-sm mt-1">Friday: Closed</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                </div>
-                <div class="d-none d-lg-flex">
-                    <a class="btn btn-outline-primary border-2" href="https://themewagon.com/themes/poseify">Download
-                        Now</a>
-                </div>
-            </div>
-        </nav>
 
-        <div class="page-header pb-5">
-            <div class="container text-center py-5">
-                <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Contact</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-primary active" aria-current="page">Contact</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="title-left">
-                            <h5>Contact</h5>
-                            <h1>Please Contact Us</h1>
-                        </div>
+                    <div class="bg-gradient-to-br from-amber-600/20 to-amber-800/20 border border-amber-600/40 rounded-lg p-8">
+                        <h4 class="text-xl font-semibold text-white mb-3">Emergency Legal Assistance</h4>
+                        <p class="text-slate-400 mb-4">
+                            For urgent legal matters requiring immediate attention, our on-call attorneys are available 24/7.
+                        </p>
+                        <a href="tel:+96566667777" class="inline-flex items-center gap-2 w-full justify-center py-3 border-2 border-amber-600 text-amber-400 hover:bg-amber-600/10 font-semibold rounded-lg transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            Emergency Hotline: +965 6666 7777
+                        </a>
                     </div>
-                    <h4 class="lh-base mb-4">Receive messages instantly with our PHP and Ajax contact form - available
-                        in the <a href="https://htmlcodex.com/downloading/?item=3631">Pro Version</a> only.</h4>
-                    <table class="table table-dark mb-0 wow fadeInUp" data-wow-delay="0.3s">
-                        <tr>
-                            <td>PHONE</td>
-                            <td>+0123456789</td>
-                        </tr>
-                        <tr>
-                            <td>E-MAIL</td>
-                            <td>info@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>ADDRESS</td>
-                            <td>123 Street, New York, USA</td>
-                        </tr>
-                        <tr class="border-dark">
-                            <td>FOLLOW US</td>
-                            <td>
-                                <a class="me-1" href="#!"><i class="fab fa-x-twitter"></i></a>
-                                <a class="me-1" href="#!"><i class="fab fa-facebook-f"></i></a>
-                                <a class="me-1" href="#!"><i class="fab fa-youtube"></i></a>
-                                <a class="me-1" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-secondary border-0" id="name"
-                                        placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-secondary border-0" id="email"
-                                        placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-secondary border-0" id="subject"
-                                        placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-secondary border-0"
-                                        placeholder="Leave a message here" id="message"
-                                        style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-outline-primary border-2 w-100 py-3" type="submit">Send
-                                    Message</button>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Google Map Start -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.3s">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"
-            style="width: 100%; height: 500px; filter: grayscale(100%) invert(92%) contrast(83%); border: 0;"></iframe>
-    </div>
-    <!-- Google Map End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <a href="index.html">
-                <h1 class="display-4 mb-3 text-white text-uppercase"><i
-                        class="fa-regular fa-face-smile me-1"></i>Poseify</h1>
-            </a>
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-x-twitter"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-youtube"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </div>
-            <p>&copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.</p>
-
-            <!--/*** The author’s attribution link must remain intact in the template. ***/-->
-            <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
-            <p class="mb-0">Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>.
-                Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>.</p>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+    </section>

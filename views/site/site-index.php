@@ -41,7 +41,7 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h6 class="mb-0 text-primary text-uppercase">Mohammed Meibil AlEnezi Group</h6>
+                <img src="/image/logo.png" height="100"/>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -186,228 +186,32 @@
 
 
     <!-- Team Start -->
-    <!-- <div class="container-fluid py-5">
+    <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center">
                 <div class="title wow fadeInUp" data-wow-delay="0.1s">
                     <div class="title-center">
-                        <h5>Models</h5>
-                        <h1>Meet Our Models</h1>
+                        <h5>Our Team</h5>
+                        <h1>Meet Our Team</h1>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
+            <div class="row g-4 justify-content-center">
+                <?php foreach ($teamModel as $teamIndeex => $team): ?>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="team-body">
+                                <img class="img-fluid" src="/uploads/<?= $team->avatar ?>" alt="">
                             </div>
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
+                            <a class="team-name" href="#">
+                                <h5 class="text-uppercase mb-0"><?= $team->name_en ?> </h5>
+                            </a>
                         </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Naomy Olsen</h5>
-                        </a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Pamela Torney</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Joanne Irwin</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Gillian Rowe</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-5.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Naomy Olsen</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-6.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Pamela Torney</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-7.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Joanne Irwin</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-8.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Gillian Rowe</h5>
-                        </a>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Team End -->
 
 
