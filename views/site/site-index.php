@@ -41,7 +41,10 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <img src="/image/logo.png" height="100"/>
+                <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                    <img src="/images/lawyerLogo.png" alt="Logo" height="50">
+                </a>
+
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">

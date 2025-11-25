@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Service;
+use app\models\ContactInquiries;
 use app\models\Team;
 
 class SiteController extends Controller
@@ -67,13 +68,23 @@ class SiteController extends Controller
 
         $this->layout = false;
 
-        $bannerModel = Banner::find()->all();
+        $bannerModel = (new \yii\db\Query())
+    ->from('banners')
+    ->where(['is_active' => 1, 'is_deleted' => 0])
+    ->orderBy(['banner_id' => SORT_ASC])
+    ->all();
         $serviceModel = Service::find()->all();
-        $teamModel = Team::find()->all();
-        return $this->render('site-index-new', [
+        // $teamModel = Team::find()->all();
+        $teamModel = Team::find()
+        ->where(['is_active' => 1, 'is_deleted' => 0])
+        ->orderBy(['sort_order' => SORT_ASC])
+        ->all();
+        $lang = Yii::$app->language; // 'en' or 'ar'
+        return $this->render('site-new-update', [
             "bannerModel" => $bannerModel,
             "serviceModel" => $serviceModel,
             "teamModel" => $teamModel,
+            'lang'=>$lang,
         ]);
     }
     public function actionDashboard()
@@ -156,4 +167,28 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+public function actionSaveContact()
+{
+    Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
+    $request = Yii::$app->request->post();
+    if (!$request) {
+        return ['status' => 400, 'message' => 'Invalid Request'];
+    }
+
+    Yii::$app->db->createCommand()->insert('contact_inquiries', [
+        'full_name' => $request['full_name'],
+        'email' => $request['email'],
+        'phone' => $request['phone'],
+        'legal_matter' => $request['subject'],
+        'message' => $request['message'],
+    ])->execute();
+
+    return ['status' => 200, 'message' => 'Saved Successfully'];
+}
+
+
+
+
 }

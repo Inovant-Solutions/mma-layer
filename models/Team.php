@@ -43,7 +43,7 @@ class Team extends \yii\db\ActiveRecord
             [['name_en', 'name_ar', 'avatar'], 'required'],
             [['sort_order', 'is_active', 'is_deleted'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
-            [['name_en', 'name_ar', 'caption_en', 'caption_ar', 'avatar'], 'string', 'max' => 255],
+            [['name_en', 'name_ar', 'caption_en', 'caption_ar', 'avatar','designation_en', 'designation_ar', ], 'string', 'max' => 255],
         ];
     }
 
@@ -58,6 +58,8 @@ class Team extends \yii\db\ActiveRecord
             'name_ar' => Yii::t('app', 'Name Ar'),
             'caption_en' => Yii::t('app', 'Caption En'),
             'caption_ar' => Yii::t('app', 'Caption Ar'),
+            'designation_en' => 'Designation (English)',
+            'designation_ar' => 'Designation (Arabic)',
             'avatar' => Yii::t('app', 'Avatar ~ (500X500)'),
             'sort_order' => Yii::t('app', 'Sort Order'),
             'is_active' => Yii::t('app', 'Is Active'),
